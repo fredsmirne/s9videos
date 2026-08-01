@@ -6,18 +6,28 @@
 <title>S9 Videos — Cinematic Video Tours for Short-Term Rentals</title>
 <meta name="description" content="Cinematic video tours that make your Airbnb listing stand out. Produced and delivered ready to post.">
 <style>
-  :root { --bg:#0d0d0f; --text:#f4f2ee; --muted:#9a968f; --accent:#d8b56a; }
+  :root { --bg:#0d0d0f; --surface:#16161a; --text:#f4f2ee; --muted:#9a968f; --accent:#d8b56a; }
   * { margin:0; padding:0; box-sizing:border-box; }
   body {
     background: var(--bg); color: var(--text);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     min-height: 100vh; display:flex; flex-direction:column;
-    align-items:center; justify-content:center; text-align:center; padding:32px;
+    align-items:center; justify-content:center; text-align:center; padding:32px 24px 60px;
   }
   .wordmark { font-size: clamp(28px, 6vw, 48px); font-weight:700; letter-spacing:0.3em; text-transform:uppercase; }
   .wordmark span { color: var(--accent); }
   .tagline { margin-top:18px; color:var(--muted); font-size: clamp(14px, 2.4vw, 18px); letter-spacing:0.06em; max-width: 480px; line-height:1.6; }
-  .rule { width:56px; height:1px; background:var(--accent); margin:34px auto 0; }
+  .rule { width:56px; height:1px; background:var(--accent); margin:34px auto; }
+  .featured-label { color:var(--muted); font-size:12px; letter-spacing:0.2em; text-transform:uppercase; margin-bottom:16px; }
+  .card {
+    display:block; text-decoration:none; color:var(--text);
+    background:var(--surface); border:1px solid #26262c; border-radius:14px;
+    padding:22px 28px; max-width:420px; transition:border-color .2s;
+  }
+  .card:hover { border-color: var(--accent); }
+  .card .name { font-size:16px; font-weight:600; }
+  .card .loc { margin-top:6px; color:var(--muted); font-size:12px; letter-spacing:0.12em; text-transform:uppercase; }
+  .card .cta { margin-top:14px; color:var(--accent); font-size:13px; letter-spacing:0.1em; text-transform:uppercase; }
   footer { position:fixed; bottom:26px; color:var(--muted); font-size:12px; letter-spacing:0.08em; }
 </style>
 </head>
@@ -26,6 +36,12 @@
     <div class="wordmark">S<span>9</span> Videos</div>
     <p class="tagline">Cinematic video tours that make your short-term rental stand out — produced, branded, and delivered ready to post.</p>
     <div class="rule"></div>
+    <p class="featured-label">Featured Preview</p>
+    <a class="card" href="/nashville/">
+      <div class="name">Luxury Wet Room w/ Rooftop Hot Tub to Broadway</div>
+      <div class="loc">Nashville, Tennessee</div>
+      <div class="cta">Watch the video tour →</div>
+    </a>
   </div>
   <footer>© S9 Videos</footer>
 </body>
