@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Luxury Wet Room w/ Rooftop Hot Tub — S9 Videos</title>
 <meta property="og:title" content="Luxury Wet Room w/ Rooftop Hot Tub to Broadway — Video Tour">
-<meta property="og:description" content="Watch the video tour of this Nashville listing. Produced by S9 Videos.">
+<meta property="og:description" content="Watch the video tour of this Nashville listing in all formats. Produced by S9 Videos.">
 <meta property="og:type" content="video.other">
 <style>
   :root {
@@ -24,69 +24,45 @@
     display: flex;
     flex-direction: column;
   }
-  header {
-    padding: 28px 24px 20px;
-    text-align: center;
-  }
-  .wordmark {
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-  }
+  header { padding: 28px 24px 20px; text-align: center; }
+  .wordmark { font-size: 15px; font-weight: 700; letter-spacing: 0.35em; text-transform: uppercase; }
   .wordmark span { color: var(--accent); }
-  main {
-    flex: 1;
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 8px 24px 48px;
-  }
+  main { flex: 1; width: 100%; max-width: 960px; margin: 0 auto; padding: 8px 24px 48px; }
   .player {
     background: var(--surface);
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 24px 60px rgba(0,0,0,0.5);
   }
-  video {
-    display: block;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    background: #000;
-  }
-  .details {
-    padding: 28px 6px 0;
-    text-align: center;
-  }
-  h1 {
-    font-size: clamp(20px, 3.4vw, 28px);
-    font-weight: 600;
-    letter-spacing: 0.01em;
-  }
-  .location {
-    margin-top: 8px;
-    color: var(--muted);
-    font-size: 14px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
+  video { display: block; width: 100%; background: #000; }
+  .wide video { aspect-ratio: 16 / 9; }
+  .details { padding: 28px 6px 0; text-align: center; }
+  h1 { font-size: clamp(20px, 3.4vw, 28px); font-weight: 600; letter-spacing: 0.01em; }
+  .location { margin-top: 8px; color: var(--muted); font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; }
   .badge {
-    display: inline-block;
-    margin-top: 18px;
-    padding: 7px 16px;
-    border: 1px solid var(--accent);
-    border-radius: 999px;
-    color: var(--accent);
-    font-size: 12px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+    display: inline-block; margin-top: 18px; padding: 7px 16px;
+    border: 1px solid var(--accent); border-radius: 999px; color: var(--accent);
+    font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase;
   }
+  .format-label {
+    margin: 0 0 12px; color: var(--muted); font-size: 12px;
+    letter-spacing: 0.18em; text-transform: uppercase; text-align: center;
+  }
+  .section-title {
+    margin: 52px 0 24px; text-align: center; font-size: 13px; color: var(--muted);
+    letter-spacing: 0.2em; text-transform: uppercase;
+  }
+  .vertical-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 28px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .vertical-grid video { aspect-ratio: 9 / 16; }
   footer {
-    padding: 26px 24px 34px;
-    text-align: center;
-    color: var(--muted);
-    font-size: 12.5px;
-    letter-spacing: 0.06em;
+    padding: 26px 24px 34px; text-align: center;
+    color: var(--muted); font-size: 12.5px; letter-spacing: 0.06em;
   }
   footer a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--accent); }
 </style>
@@ -96,16 +72,36 @@
     <div class="wordmark">S<span>9</span> Videos</div>
   </header>
   <main>
-    <div class="player">
-      <video controls playsinline poster="" controlslist="nodownload">
-        <source src="video.mp4" type="video/mp4">
-        Your browser does not support video playback.
-      </video>
-    </div>
-    <div class="details">
+    <div class="details" style="padding-bottom: 26px; padding-top: 0;">
       <h1>Luxury Wet Room w/ Rooftop Hot Tub to Broadway</h1>
       <div class="location">Nashville, Tennessee</div>
       <div class="badge">Preview</div>
+    </div>
+    <p class="format-label">Listing Website · 16:9</p>
+    <div class="player wide">
+      <video controls playsinline preload="metadata" controlslist="nodownload">
+        <source src="site_16x9_PREVIEW.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+    </div>
+    <p class="section-title">Social Formats · 9:16</p>
+    <div class="vertical-grid">
+      <div>
+        <p class="format-label">TikTok</p>
+        <div class="player">
+          <video controls playsinline preload="metadata" controlslist="nodownload">
+            <source src="tiktok_PREVIEW.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div>
+        <p class="format-label">Instagram Reels</p>
+        <div class="player">
+          <video controls playsinline preload="metadata" controlslist="nodownload">
+            <source src="instagram_reels_PREVIEW.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
     </div>
   </main>
   <footer>
